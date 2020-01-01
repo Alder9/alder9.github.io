@@ -1,18 +1,109 @@
 ---
-layout: default
+layout: null
+title: Thomas Alder
+description: Thomas Alder's website.
+sitemap:
+    priority: 1.0
+    lastmod: 2019-12-31
+    changefreq: weekly
 ---
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	</head>
+	<body class="is-loading">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="button button-primary">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+				<!-- Intro -->
+					<div id="intro">
+            <h1>{{site.title}}</h1>
+						<h2>Developer & Designer</h2>
+						<p>Current Computer Science BS Student as the University of Colorado - Boulder</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						
+						<a href="{{ "/" | absolute_url }}" class="logo"><img src="images/alder_logo_white.png" alt="Alder Logo" height=150></a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.</a></h2>
+									<p>Mosher’s Law of Software Engineering</p>
+								</header>
+								<img src="{{ "/images/pic01.jpg" | absolute_url }}" alt="" />
+                <p>Currently entering my final semester at CU Boulder and I have no idea how I got here.</p>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+                {% for post in site.posts limit:3 %}
+                {% assign mod3 = forloop.index | modulo: 3 %}
+  								<article>
+  									<header>
+  										<span class="date">{{ post.date | date_to_string }}</span>
+  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+  									</header>
+  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+  									<p>{{ post.excerpt }}</p>
+  									<ul class="actions">
+  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+  									</ul>
+  								</article>
+                  {% if mod3 == 0 %}
+                  <article>
+  									<header>
+  										<h2><a href="#">Sponsored</a></h2>
+  									</header>
+
+  								</article>
+                  {% endif %}
+                {% endfor %}
+
+							</section>
+
+						<!-- Footer -->
+							<footer>
+                <ul class="actions">
+                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">Blog</a></li>
+                </ul>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+    {% include tracking.html %}
+
+	</body>
+</html>

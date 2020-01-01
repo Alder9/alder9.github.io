@@ -1,15 +1,49 @@
----
-layout: blog
----
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+	</head>
+	<body class="is-loading">
 
-<article class="post">
- <div class="space-extra-small">
- </div>
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-  <div class="entry">
-    {{ content }}
-  </div>
+				<!-- Header -->
+        <header id="header">
+          <a href="{{ "/" | absolute_url }}" class="logo"><img src="../../images/alder_logo_white.png" alt="Alder Logo" height=150></a>
+        </header>
 
-  {% include disqus.html %}
-</article>
+				<!-- Nav -->
+					<nav id="nav">
 
+            {% include nav.html %}
+						
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+          <section class="post">
+    				<header class="major">
+      				<span class="date">{{page.date | date_to_string}}</span>
+      				<h1>{{page.title}}</h1>
+      			</header>
+      			<p>{{content}}</p>
+      		</section>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+      <!-- Scripts -->
+  		{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
+</html>
