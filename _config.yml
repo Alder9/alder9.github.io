@@ -4,7 +4,7 @@ bio:                'Portfolio Website for Thomas Alder'
 description:        "Portfolio Website for Thomas Alder"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "thomasalder.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 
 # Comments
 disqus_shortname:   default
