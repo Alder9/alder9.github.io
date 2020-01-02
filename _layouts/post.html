@@ -16,7 +16,7 @@
 
 				<!-- Header -->
         <header id="header">
-          <a href="{{ "/" | absolute_url }}" class="logo"><img src="../../images/alder_logo_white.png" alt="Alder Logo" height=150></a>
+          <a href="{{ "/" | absolute_url }}" class="logo"><img src="../../images/alder_logo_white.png" alt="Alder Logo" height=100></a>
         </header>
 
 				<!-- Nav -->
@@ -34,13 +34,22 @@
       				<h1>{{page.title}}</h1>
       			</header>
       			<p>{{content}}</p>
-      		</section>
-
+			  </section>
+			  <footer>
+				<ul class="actions">
+					<li><a href="{{ "/" | absolute_url }}" class="button">Back to Home</a></li>
+					<li><a href="{{ "/blog/" | absolute_url }}" class="button">Blog</a></li>
+					<li><a href="{{ "/projects/" | absolute_url }}" class="button">Projects</a></li>
+				  </ul>
+			</footer>
+		</div>
 				<!-- Footer -->
-        {% include foot.html %}
+		
+		
+		{% include foot.html %}
 
-			</div>
-
+			
+		
       <!-- Scripts -->
   		{% include scripts-main.html %}
 			{% include tracking.html %}
