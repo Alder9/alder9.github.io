@@ -34,7 +34,7 @@ Currently completing Computer Science BS at University of Colorado - Boulder. Gr
 * Gained exposure to workflows involving numerous, large companies by sitting and participating in remote and in-person working group meetings.
 
 ### Resume
-<a href="../../assets/files/ThomasAlderResume11-17.pdf" class="button">Click here!</a>
+<a href="../../assets/files/ThomasAlderResume01-17-19.pdf" class="button">Click here!</a>
 
 ### Contact me
 <a href="mailto:thomas.alder999@gmail.com" class="button">Email me!</a>
