@@ -34,7 +34,11 @@ Currently completing Computer Science BS at University of Colorado - Boulder. Gr
 * Spent time within their VR arcade as a VR guide helping people from numerous backgrounds understand and experience VR.
 
 ### Resume
+<<<<<<< HEAD
 <a href="../../assets/files/ThomasAlderResume.pdf" class="button" target="_blank">Click here!</a>
+=======
+<a href="../../assets/files/ThomasAlderResume01-17-19.pdf" class="button">Click here!</a>
+>>>>>>> 2cdfb811f063654e54e6f7eb7d9a5169390d0eef
 
 ### Contact me
 <a href="mailto:thomas.alder999@gmail.com" class="button">Email me!</a>
